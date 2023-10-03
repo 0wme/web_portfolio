@@ -1,0 +1,166 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+    background-color: black;
+    background-image: url('img/about.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 1px solid white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid cornflowerblue;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+/* Main content styles */
+main.container {
+    margin-top: 80px;
+    position: relative;
+    padding: 20px;
+}
+
+#timeline {
+    position: absolute;
+    width: 4px;
+    background-color: white;
+    height: 100%;
+    left: 50%;
+    z-index: 1;
+}
+
+.box {
+    background-color: grey;
+    width: 45%;
+    margin: 300px 0;
+    padding: 30px;
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.left {
+    margin-left: 5%;
+}
+
+.right {
+    margin-left: 50%;
+}
+
+
+.language-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espace entre les carrés */
+    margin-top: 20px; /* Espace entre le texte et la grille */
+    width: 100%; /* Utilise toute la largeur disponible */
+}
+
+
+.language-image {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 calc(25% - 10px); /* Prend 25% de l'espace, en soustrayant le gap. Modifié flex: 1 à flex: 0 pour éviter l'étirement */
+    box-sizing: border-box;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Ajoute une position relative pour que le tooltip soit positionné par rapport à l'image */
+}
+
+.language-image:hover {
+    border: 2px solid white; /* Ajoute un contour blanc autour du carré */
+    box-shadow: 0px 0px 10px white; /* Ajoute un léger halo blanc pour un effet plus prononcé */
+}
+
+.language-image img {
+    max-width: 70%;
+    height: auto;
+}
+
+.tooltip {
+    position: absolute;
+    top: 50%; /* Centre le tooltip verticalement par rapport à l'image */
+    left: -300px; /* Positionne le tooltip à gauche de l'image */
+    transform: translateY(-50%); /* Pour bien le centrer verticalement */
+    display: none; /* Par défaut, le tooltip est caché */
+    width: 200px; /* Largeur de la tooltip */
+    height: 300px; /* Hauteur de la tooltip */
+    background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent noir */
+    color: white; /* Texte blanc */
+    padding: 10px; /* Espacement autour du contenu */
+    border-radius: 10px; /* Coins arrondis */
+    z-index: 10; /* Assurez-vous que le tooltip s'affiche au-dessus des autres éléments */
+    transition: opacity 0.3s ease; /* Transition douce lors de l'affichage/la disparition */
+    opacity: 0; /* Par défaut, le tooltip est transparent */
+    overflow: auto; /* Pour permettre le défilement si le contenu dépasse la hauteur */
+}
+
+.language-image:hover .tooltip {
+    display: block; /* Affiche le tooltip lors du survol de l'image */
+    opacity: 1; /* Rend le tooltip opaque lors du survol de l'image */
+}
