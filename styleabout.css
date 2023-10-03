@@ -159,21 +159,3 @@ main.container {
     overflow: auto;
 }
 
-.language-grid:hover .tooltip {
-    display: block;
-    opacity: 1;
-}
-
-.language-image[data-tooltip="1"]:hover + .tooltip[data-tooltip-target="1"],
-.language-image[data-tooltip="2"]:hover + .tooltip[data-tooltip-target="2"],
-.language-image[data-tooltip="3"]:hover + .tooltip[data-tooltip-target="3"],
-.language-image[data-tooltip="4"]:hover + .tooltip[data-tooltip-target="4"],
-.language-image[data-tooltip="5"]:hover + .tooltip[data-tooltip-target="5"],
-.language-image[data-tooltip="6"]:hover + .tooltip[data-tooltip-target="6"],
-.language-image[data-tooltip="7"]:hover + .tooltip[data-tooltip-target="7"],
-.language-image[data-tooltip="8"]:hover + .tooltip[data-tooltip-target="8"],
-.language-image[data-tooltip="9"]:hover + .tooltip[data-tooltip-target="9"],
-.language-image[data-tooltip="10"]:hover + .tooltip[data-tooltip-target="10"] {
-    display: block;
-    opacity: 1;
-}
