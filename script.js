@@ -85,3 +85,37 @@ circlesCSharp.forEach((circle, index) => {
         circle.style.backgroundColor = "transparent";
     }
 });
+
+
+// Pour HTML
+let numberOfFilledCirclesHTML = 4; // Ce nombre peut être modifié comme vous le souhaitez
+const circlesHTML = document.querySelectorAll('.ratinghtml .circle');
+circlesHTML.forEach((circle, index) => {
+    if(index < numberOfFilledCirclesHTML) {
+        circle.style.backgroundColor = "rgb(255, 255, 255)";
+    } else {
+        circle.style.backgroundColor = "transparent";
+    }
+});
+
+// Pour CSS
+let numberOfFilledCirclesCSS = 4; // Ce nombre peut être modifié comme vous le souhaitez
+const circlesCSS = document.querySelectorAll('.ratingcss .circle');
+circlesCSS.forEach((circle, index) => {
+    if(index < numberOfFilledCirclesCSS) {
+        circle.style.backgroundColor = "rgb(255, 255, 255)";
+    } else {
+        circle.style.backgroundColor = "transparent";
+    }
+});
+
+// Pour JS
+let numberOfFilledCirclesJS = 2; // Ce nombre peut être modifié comme vous le souhaitez
+const circlesJS = document.querySelectorAll('.ratingjs .circle');
+circlesJS.forEach((circle, index) => {
+    if(index < numberOfFilledCirclesJS) {
+        circle.style.backgroundColor = "rgb(255, 255, 255)";
+    } else {
+        circle.style.backgroundColor = "transparent";
+    }
+});

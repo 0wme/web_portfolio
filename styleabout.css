@@ -261,3 +261,18 @@ main.container {
     display: flex;
     gap: 10px;  /* Espace entre les cercles */
 }
+
+.ratinghtml {
+    display: flex;
+    gap: 10px;  /* Espace entre les cercles */
+}
+
+.ratingcss {
+    display: flex;
+    gap: 10px;  /* Espace entre les cercles */
+}
+
+.ratingjs {
+    display: flex;
+    gap: 10px;  /* Espace entre les cercles */
+}
