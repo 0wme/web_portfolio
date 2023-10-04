@@ -239,12 +239,11 @@ main.container {
 }
 
 
-/* Partie Cercle des langages */
 .circle {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 2px solid rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    border: 2px solid cornflowerblue;
     background-color: transparent;
 }
 
@@ -252,6 +251,8 @@ main.container {
 .ratingpython {
     display: flex;
     gap: 10px; 
+    justify-content: center;
+    margin-top: 100px;
 }
 
 .ratingjava {
@@ -347,3 +348,10 @@ main.container {
     gap: 10px;
 }
 
+.TitleToolTip {
+    font-size: 20px;
+    font-weight: bold;
+    font-display: flex;
+    text-align: center;
+    margin-top: 20px;
+}
