@@ -11,11 +11,17 @@ body {
     line-height: 1.5;
     color: #ffffff;
     background-color: black;
-    background-image: url('img/about.png');
-    background-size: cover;
+    background-image: url('img/test.png');
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;  /* Assure que l'image couvre l'arrière-plan entièrement */
+    background-attachment: fixed;  /* Assure que l'image de fond reste fixe lors du défilement */
+    height: 100vh;  /* Utilise 100% de la hauteur de la fenêtre de visualisation */
+    width: 100vw;   /* Utilise 100% de la largeur de la fenêtre de visualisation */
+    margin: 0;      /* Supprime les marges par défaut */
+    overflow-x: hidden;  /* Empêche le défilement horizontal */
 }
+
 
 
 .container {
@@ -26,10 +32,9 @@ body {
 
 /* Header styles */
 header {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6); /* Ajout de transparence */
     color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -99,7 +104,6 @@ main.container {
     flex-direction: column;
     align-items: start;
     border: 2px solid white;
-    backdrop-filter: blur(30px);
 }
 
 
