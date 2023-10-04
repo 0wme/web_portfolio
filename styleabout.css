@@ -239,11 +239,7 @@ main.container {
 }
 
 
-.rating {
-    display: flex;
-    gap: 10px;  /* Espace entre les cercles */
-}
-
+/* Partie Cercle des langages */
 .circle {
     width: 30px;
     height: 30px;
@@ -252,6 +248,26 @@ main.container {
     background-color: transparent;
 }
 
+
+.ratingpython {
+    display: flex;
+    gap: 10px;  /* Espace entre les cercles */
+}
+
+.ratingjava {
+    display: flex;
+    gap: 10px;  /* Espace entre les cercles */
+}
+
+.ratingc {
+    display: flex;
+    gap: 10px;  /* Espace entre les cercles */
+}
+
+.rating {
+    display: flex;
+    gap: 10px;  /* Espace entre les cercles */
+}
 
 .ratingcsharp {
     display: flex;
@@ -273,20 +289,6 @@ main.container {
     gap: 10px;  /* Espace entre les cercles */
 }
 
-.ratingpython {
-    display: flex;
-    gap: 10px;  /* Espace entre les cercles */
-}
-
-.ratingjava {
-    display: flex;
-    gap: 10px;  /* Espace entre les cercles */
-}
-
-.ratingc {
-    display: flex;
-    gap: 10px;  /* Espace entre les cercles */
-}
 
 .ratinglua {
     display: flex;
@@ -297,3 +299,32 @@ main.container {
     display: flex;
     gap: 10px;  /* Espace entre les cercles */
 }
+
+/* Partie Cercle des Tools */
+
+.ratingintellij {
+    display: flex;
+    gap: 10px;  /* Espace entre les cercles */
+}
+
+.ratingdatagrip {
+    display: flex;
+    gap: 10px;  /* Espace entre les cercles */
+}
+
+.ratingpycharm {
+    display: flex;
+    gap: 10px;  /* Espace entre les cercles */
+}
+
+.ratingclion {
+    display: flex;
+    gap: 10px;  /* Espace entre les cercles */
+}
+
+.ratingfleet {
+    display: flex;
+    gap: 10px;  /* Espace entre les cercles */
+}
+
+

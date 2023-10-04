@@ -51,8 +51,11 @@ toolsImages.forEach(image => {
 });
 
 
+
+//------------------ Cercles des Langages  ------------------//
+
 // Pour Python
-let numberOfFilledCirclesPython = 4; // Ce nombre peut être modifié comme vous le souhaitez
+let numberOfFilledCirclesPython = 4;
 const circlesPython = document.querySelectorAll('.ratingpython .circle');
 circlesPython.forEach((circle, index) => {
     if(index < numberOfFilledCirclesPython) {
@@ -63,7 +66,7 @@ circlesPython.forEach((circle, index) => {
 });
 
 // Pour Java
-let numberOfFilledCirclesJava = 3; // Ce nombre peut être modifié comme vous le souhaitez
+let numberOfFilledCirclesJava = 3;
 const circlesJava = document.querySelectorAll('.ratingjava .circle');
 circlesJava.forEach((circle, index) => {
     if(index < numberOfFilledCirclesJava) {
@@ -74,7 +77,7 @@ circlesJava.forEach((circle, index) => {
 });
 
 // Pour C++
-let numberOfFilledCircles = 3; // Ce nombre peut être modifié comme vous le souhaitez
+let numberOfFilledCircles = 3;
 
 const circles = document.querySelectorAll('.rating .circle');
 
@@ -87,7 +90,7 @@ circles.forEach((circle, index) => {
 });
 
 // Pour C
-let numberOfFilledCirclesC = 2; // Ce nombre peut être modifié comme vous le souhaitez
+let numberOfFilledCirclesC = 2;
 const circlesC = document.querySelectorAll('.ratingc .circle');
 circlesC.forEach((circle, index) => {
     if(index < numberOfFilledCirclesC) {
@@ -98,7 +101,7 @@ circlesC.forEach((circle, index) => {
 });
 
 // Pour C#
-let numberOfFilledCirclesCSharp = 2; // Ce nombre peut être modifié comme vous le souhaitez
+let numberOfFilledCirclesCSharp = 2;
 const circlesCSharp = document.querySelectorAll('.ratingcsharp .circle');
 circlesCSharp.forEach((circle, index) => {
     if(index < numberOfFilledCirclesCSharp) {
@@ -110,7 +113,7 @@ circlesCSharp.forEach((circle, index) => {
 
 
 // Pour HTML
-let numberOfFilledCirclesHTML = 4; // Ce nombre peut être modifié comme vous le souhaitez
+let numberOfFilledCirclesHTML = 4;
 const circlesHTML = document.querySelectorAll('.ratinghtml .circle');
 circlesHTML.forEach((circle, index) => {
     if(index < numberOfFilledCirclesHTML) {
@@ -121,7 +124,7 @@ circlesHTML.forEach((circle, index) => {
 });
 
 // Pour CSS
-let numberOfFilledCirclesCSS = 4; // Ce nombre peut être modifié comme vous le souhaitez
+let numberOfFilledCirclesCSS = 4;
 const circlesCSS = document.querySelectorAll('.ratingcss .circle');
 circlesCSS.forEach((circle, index) => {
     if(index < numberOfFilledCirclesCSS) {
@@ -132,7 +135,7 @@ circlesCSS.forEach((circle, index) => {
 });
 
 // Pour JS
-let numberOfFilledCirclesJS = 2; // Ce nombre peut être modifié comme vous le souhaitez
+let numberOfFilledCirclesJS = 2;
 const circlesJS = document.querySelectorAll('.ratingjs .circle');
 circlesJS.forEach((circle, index) => {
     if(index < numberOfFilledCirclesJS) {
@@ -143,7 +146,7 @@ circlesJS.forEach((circle, index) => {
 });
 
 // Pour Lua
-let numberOfFilledCirclesLua = 3; // Ce nombre peut être modifié comme vous le souhaitez
+let numberOfFilledCirclesLua = 3;
 const circlesLua = document.querySelectorAll('.ratinglua .circle');
 circlesLua.forEach((circle, index) => {
     if(index < numberOfFilledCirclesLua) {
@@ -154,10 +157,68 @@ circlesLua.forEach((circle, index) => {
 });
 
 // Pour SQL 
-let numberOfFilledCirclesSQL = 4; // Ce nombre peut être modifié comme vous le souhaitez
+let numberOfFilledCirclesSQL = 4;
 const circlesSQL = document.querySelectorAll('.ratingsql .circle');
 circlesSQL.forEach((circle, index) => {
     if(index < numberOfFilledCirclesSQL) {
+        circle.style.backgroundColor = "rgb(255, 255, 255)";
+    } else {
+        circle.style.backgroundColor = "transparent";
+    }
+});
+
+
+//------------------ Cercles des Tools  ------------------//
+
+// Pour IntelliJ
+let numberOfFilledCirclesIntelliJ = 4;
+const circlesIntelliJ = document.querySelectorAll('.ratingintellij .circle');
+circlesIntelliJ.forEach((circle, index) => {
+    if(index < numberOfFilledCirclesIntelliJ) {
+        circle.style.backgroundColor = "rgb(255, 255, 255)";
+    } else {
+        circle.style.backgroundColor = "transparent";
+    }
+});
+
+// Pour DataGrip
+let numberOfFilledCirclesDataGrip = 4;
+const circlesDataGrip = document.querySelectorAll('.ratingdatagrip .circle');
+circlesDataGrip.forEach((circle, index) => {
+    if(index < numberOfFilledCirclesDataGrip) {
+        circle.style.backgroundColor = "rgb(255, 255, 255)";
+    } else {
+        circle.style.backgroundColor = "transparent";
+    }
+});
+
+// Pour PyCharm
+let numberOfFilledCirclesPyCharm = 4;
+const circlesPyCharm = document.querySelectorAll('.ratingpycharm .circle');
+circlesPyCharm.forEach((circle, index) => {
+    if(index < numberOfFilledCirclesPyCharm) {
+        circle.style.backgroundColor = "rgb(255, 255, 255)";
+    } else {
+        circle.style.backgroundColor = "transparent";
+    }
+});
+
+// Pour CLion
+let numberOfFilledCirclesCLion = 4;
+const circlesCLion = document.querySelectorAll('.ratingclion .circle');
+circlesCLion.forEach((circle, index) => {
+    if(index < numberOfFilledCirclesCLion) {
+        circle.style.backgroundColor = "rgb(255, 255, 255)";
+    } else {
+        circle.style.backgroundColor = "transparent";
+    }
+});
+
+// Pour Fleet
+let numberOfFilledCirclesFleet = 0;
+const circlesFleet = document.querySelectorAll('.ratingfleet .circle');
+circlesFleet.forEach((circle, index) => {
+    if(index < numberOfFilledCirclesFleet) {
         circle.style.backgroundColor = "rgb(255, 255, 255)";
     } else {
         circle.style.backgroundColor = "transparent";
