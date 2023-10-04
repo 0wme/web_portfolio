@@ -248,110 +248,34 @@ main.container {
 }
 
 
-.ratingpython {
-    display: flex;
-    gap: 10px; 
-    justify-content: center;
-    margin-top: 100px;
-}
-
-.ratingjava {
-    display: flex;
-    gap: 10px;
-}
-
-.ratingc {
-    display: flex;
-    gap: 10px;
-}
-
-.rating {
-    display: flex;
-    gap: 10px;
-}
-
-.ratingcsharp {
-    display: flex;
-    gap: 10px;
-}
-
-.ratinghtml {
-    display: flex;
-    gap: 10px; 
-}
-
-.ratingcss {
-    display: flex;
-    gap: 10px;
-}
-
-.ratingjs {
-    display: flex;
-    gap: 10px;
-}
-
-
-.ratinglua {
-    display: flex;
-    gap: 10px;
-}
-
-.ratingsql {
-    display: flex;
-    gap: 10px;
-}
-
-/* Partie Cercle des Tools */
-
-.ratingintellij {
-    display: flex;
-    gap: 10px;
-}
-
-.ratingdatagrip {
-    display: flex;
-    gap: 10px;
-}
-
-.ratingpycharm {
-    display: flex;
-    gap: 10px; 
-}
-
-.ratingclion {
-    display: flex;
-    gap: 10px;
-}
-
-.ratingfleet {
-    display: flex;
-    gap: 10px; 
-}
-
-.ratingvscode {
-    display: flex;
-    gap: 10px;
-}
-
-.ratingvscodium {
-    display: flex;
-    gap: 10px;
-}
-
-.ratingdocker {
-    display: flex;
-    gap: 10px;
-}
-
+.ratingpython, 
+.ratingjava, 
+.ratingc, 
+.rating, 
+.ratingcsharp, 
+.ratinghtml, 
+.ratingcss, 
+.ratingjs, 
+.ratinglua, 
+.ratingsql, 
+.ratingintellij, 
+.ratingdatagrip, 
+.ratingpycharm, 
+.ratingclion, 
+.ratingfleet, 
+.ratingvscode, 
+.ratingvscodium, 
+.ratingdocker, 
 .ratinggitkraken {
     display: flex;
     gap: 10px;
+    justify-content: center;
+    margin-top: 100px;
 }
 
 .TitleToolTip {
     font-size: 20px;
     font-weight: bold;
-    font-display: flex;
     text-align: center;
     margin-top: 20px;
 }
