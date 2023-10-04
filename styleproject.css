@@ -69,85 +69,18 @@ nav ul li a:hover {
     border-color: #fff;
 }
 
-
-.rectangle-container {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    height: 100vh;
+/* Styliser tous les rectangles de la même manière */
+.rectangleLatice,
+.rectangleVerger,
+.rectangleRaytracing {
+    width: 100%; 
+    height: calc((100vh - 70px - 40px) / 3); 
+    background-color: rgba(255, 255, 255, 0.1); 
+    margin-bottom: 20px; 
 }
 
-.rectangle-pair {
-    margin: 0 10px; /* Ajustez la marge pour donner l'espacement que vous désirez entre les paires de rectangles. */
+/* Enlever la marge du dernier rectangle de chaque section */
+section > div:last-child {
+    margin-bottom: 0;
 }
 
-.small-rectangle {
-    width: 400px;
-    height: 50px;
-    border: 2px solid white;
-    border-radius: 10px;
-    margin: 0 auto 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-.rectangle {
-    width: 400px;
-    height: 300px;
-    border: 2px solid white;
-    border-radius: 10px;
-    position: relative; /* déjà présent, permet de positionner les éléments enfants par rapport à ce rectangle */
-}
-
-.button-container {
-    position: absolute; /* positionne le conteneur du bouton par rapport au rectangle */
-    bottom: 20px; /* positionne le conteneur du bouton à 20px du bas du rectangle */
-    left: 50%; /* positionne le conteneur du bouton au centre horizontalement du rectangle */
-    transform: translateX(-50%); /* décale le conteneur du bouton à gauche de 50% de sa propre largeur pour le centrer parfaitement */
-}
-
-.view-more-button {
-    color: #ffffff;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-    /* Add a purple, blue, and pink border around the button */
-    border: 2px solid purple;
-    border-top-color: blue;
-    border-bottom-color: pink;
-    animation-name: borderFade;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    background-color: black; /* Définit la couleur de fond des boutons en noir */
-
-}
-
-.view-more-button:hover {
-    animation-name: none;
-    color: #fff;
-    border-color: #fff;
-    transform: scale(1.1); /* Add a scale transform to increase the size of the button */
-}
-
-
-@keyframes borderFade {
-    0% {
-        border-color: purple;
-    }
-    33% {
-        border-color: blue;
-    }
-    66% {
-        border-color: pink;
-    }
-    100% {
-        border-color: purple;
-    }
-}
