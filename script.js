@@ -51,7 +51,29 @@ toolsImages.forEach(image => {
 });
 
 
-// Nombre d'étoiles pour la partie C++ //
+// Pour Python
+let numberOfFilledCirclesPython = 4; // Ce nombre peut être modifié comme vous le souhaitez
+const circlesPython = document.querySelectorAll('.ratingpython .circle');
+circlesPython.forEach((circle, index) => {
+    if(index < numberOfFilledCirclesPython) {
+        circle.style.backgroundColor = "rgb(255, 255, 255)";
+    } else {
+        circle.style.backgroundColor = "transparent";
+    }
+});
+
+// Pour Java
+let numberOfFilledCirclesJava = 3; // Ce nombre peut être modifié comme vous le souhaitez
+const circlesJava = document.querySelectorAll('.ratingjava .circle');
+circlesJava.forEach((circle, index) => {
+    if(index < numberOfFilledCirclesJava) {
+        circle.style.backgroundColor = "rgb(255, 255, 255)";
+    } else {
+        circle.style.backgroundColor = "transparent";
+    }
+});
+
+// Pour C++
 let numberOfFilledCircles = 3; // Ce nombre peut être modifié comme vous le souhaitez
 
 const circles = document.querySelectorAll('.rating .circle');
@@ -114,6 +136,28 @@ let numberOfFilledCirclesJS = 2; // Ce nombre peut être modifié comme vous le 
 const circlesJS = document.querySelectorAll('.ratingjs .circle');
 circlesJS.forEach((circle, index) => {
     if(index < numberOfFilledCirclesJS) {
+        circle.style.backgroundColor = "rgb(255, 255, 255)";
+    } else {
+        circle.style.backgroundColor = "transparent";
+    }
+});
+
+// Pour Lua
+let numberOfFilledCirclesLua = 3; // Ce nombre peut être modifié comme vous le souhaitez
+const circlesLua = document.querySelectorAll('.ratinglua .circle');
+circlesLua.forEach((circle, index) => {
+    if(index < numberOfFilledCirclesLua) {
+        circle.style.backgroundColor = "rgb(255, 255, 255)";
+    } else {
+        circle.style.backgroundColor = "transparent";
+    }
+});
+
+// Pour SQL 
+let numberOfFilledCirclesSQL = 4; // Ce nombre peut être modifié comme vous le souhaitez
+const circlesSQL = document.querySelectorAll('.ratingsql .circle');
+circlesSQL.forEach((circle, index) => {
+    if(index < numberOfFilledCirclesSQL) {
         circle.style.backgroundColor = "rgb(255, 255, 255)";
     } else {
         circle.style.backgroundColor = "transparent";

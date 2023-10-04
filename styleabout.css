@@ -252,10 +252,6 @@ main.container {
     background-color: transparent;
 }
 
-.ratingc {
-    display: flex;
-    gap: 10px;  /* Espace entre les cercles */
-}
 
 .ratingcsharp {
     display: flex;
@@ -273,6 +269,31 @@ main.container {
 }
 
 .ratingjs {
+    display: flex;
+    gap: 10px;  /* Espace entre les cercles */
+}
+
+.ratingpython {
+    display: flex;
+    gap: 10px;  /* Espace entre les cercles */
+}
+
+.ratingjava {
+    display: flex;
+    gap: 10px;  /* Espace entre les cercles */
+}
+
+.ratingc {
+    display: flex;
+    gap: 10px;  /* Espace entre les cercles */
+}
+
+.ratinglua {
+    display: flex;
+    gap: 10px;  /* Espace entre les cercles */
+}
+
+.ratingsql {
     display: flex;
     gap: 10px;  /* Espace entre les cercles */
 }
