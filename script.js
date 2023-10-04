@@ -224,3 +224,48 @@ circlesFleet.forEach((circle, index) => {
         circle.style.backgroundColor = "transparent";
     }
 });
+
+// Pour Visual Studio Code
+let numberOfFilledCirclesVSCode = 5;
+const circlesVSCode = document.querySelectorAll('.ratingvscode .circle');
+circlesVSCode.forEach((circle, index) => {
+    if(index < numberOfFilledCirclesVSCode) {
+        circle.style.backgroundColor = "rgb(255, 255, 255)";
+    } else {
+        circle.style.backgroundColor = "transparent";
+    }
+});
+
+// Pour Visual Codium
+
+let numberOfFilledCirclesVSCodium = 2;
+const circlesVSCodium = document.querySelectorAll('.ratingvscodium .circle');
+circlesVSCodium.forEach((circle, index) => {
+    if(index < numberOfFilledCirclesVSCodium) {
+        circle.style.backgroundColor = "rgb(255, 255, 255)";
+    } else {
+        circle.style.backgroundColor = "transparent";
+    }
+});
+
+// Pour Docker
+let numberOfFilledCirclesDocker = 3;
+const circlesDocker = document.querySelectorAll('.ratingdocker .circle');
+circlesDocker.forEach((circle, index) => {
+    if(index < numberOfFilledCirclesDocker) {
+        circle.style.backgroundColor = "rgb(255, 255, 255)";
+    } else {
+        circle.style.backgroundColor = "transparent";
+    }
+});
+
+// Pour GitKraken
+let numberOfFilledCirclesGitKraken = 2;
+const circlesGitKraken = document.querySelectorAll('.ratinggitkraken .circle');
+circlesGitKraken.forEach((circle, index) => {
+    if(index < numberOfFilledCirclesGitKraken) {
+        circle.style.backgroundColor = "rgb(255, 255, 255)";
+    } else {
+        circle.style.backgroundColor = "transparent";
+    }
+});
