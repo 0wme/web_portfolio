@@ -270,12 +270,18 @@ main.container {
     display: flex;
     gap: 10px;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 .TitleToolTip {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+    margin-top: 20px;
+}
+
+.ratingcomment {
+    font-size: 12px;
+    font-style: italic;
     margin-top: 20px;
 }
