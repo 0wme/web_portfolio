@@ -27,13 +27,13 @@ languageImages.forEach(image => {
 
 
 
+// Sélectionnez tous les éléments avec la classe "tools-image"
+const toolsImages = document.querySelectorAll('.tools-image');
 
-const ToolsImages = document.querySelectorAll('.tools-image');
-
-ToolsImages.forEach(image => {
+toolsImages.forEach(image => {
     image.addEventListener('mouseenter', function() {
         const tooltipId = this.getAttribute('data-tooltip');
-        const tooltip = document.querySelector(`.tooltip[data-tooltip-target="${tooltipId}"]`);
+        const tooltip = document.querySelector(`.tooltiptool[data-tooltip-target="${tooltipId}"]`);
         if (tooltip) {
             tooltip.style.display = 'block';
             tooltip.style.opacity = '1';
@@ -42,7 +42,7 @@ ToolsImages.forEach(image => {
 
     image.addEventListener('mouseleave', function() {
         const tooltipId = this.getAttribute('data-tooltip');
-        const tooltip = document.querySelector(`.tooltip[data-tooltip-target="${tooltipId}"]`);
+        const tooltip = document.querySelector(`.tooltiptool[data-tooltip-target="${tooltipId}"]`);
         if (tooltip) {
             tooltip.style.display = 'none';
             tooltip.style.opacity = '0';
