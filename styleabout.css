@@ -237,3 +237,27 @@ main.container {
         transform: translateX(0) translateY(-50%);
     }
 }
+
+
+.rating {
+    display: flex;
+    gap: 10px;  /* Espace entre les cercles */
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+}
+
+.ratingc {
+    display: flex;
+    gap: 10px;  /* Espace entre les cercles */
+}
+
+.ratingcsharp {
+    display: flex;
+    gap: 10px;  /* Espace entre les cercles */
+}

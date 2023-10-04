@@ -49,3 +49,39 @@ toolsImages.forEach(image => {
         }
     });
 });
+
+
+// Nombre d'étoiles pour la partie C++ //
+let numberOfFilledCircles = 3; // Ce nombre peut être modifié comme vous le souhaitez
+
+const circles = document.querySelectorAll('.rating .circle');
+
+circles.forEach((circle, index) => {
+    if(index < numberOfFilledCircles) {
+        circle.style.backgroundColor = "rgb(255, 255, 255)";
+    } else {
+        circle.style.backgroundColor = "transparent";
+    }
+});
+
+// Pour C
+let numberOfFilledCirclesC = 2; // Ce nombre peut être modifié comme vous le souhaitez
+const circlesC = document.querySelectorAll('.ratingc .circle');
+circlesC.forEach((circle, index) => {
+    if(index < numberOfFilledCirclesC) {
+        circle.style.backgroundColor = "rgb(255, 255, 255)";
+    } else {
+        circle.style.backgroundColor = "transparent";
+    }
+});
+
+// Pour C#
+let numberOfFilledCirclesCSharp = 2; // Ce nombre peut être modifié comme vous le souhaitez
+const circlesCSharp = document.querySelectorAll('.ratingcsharp .circle');
+circlesCSharp.forEach((circle, index) => {
+    if(index < numberOfFilledCirclesCSharp) {
+        circle.style.backgroundColor = "rgb(255, 255, 255)";
+    } else {
+        circle.style.backgroundColor = "transparent";
+    }
+});
