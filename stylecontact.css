@@ -103,3 +103,32 @@ nav ul li a:hover {
     height: 100%;
     z-index: -1;
 }
+
+
+.link-button {
+    background-color: cornflowerblue;
+    color: #ffffff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    display: inline-flex;       /* Ajouté pour aligner le texte et la flèche */
+    align-items: center;        /* Centre verticalement la flèche par rapport au texte */
+    overflow: hidden;           /* Cacher la partie de la flèche qui dépasse pendant l'animation */
+    position: relative;
+}
+
+.arrow {
+    font-size: 24px;       /* Ajustez la taille si nécessaire */
+    display: inline-block;
+    transform: scaleX(0.2);     /* Initialement, seule la pointe de la flèche est visible */
+    transition: transform 0.3s; /* Animation */
+    margin-left: 5px;           /* Espacement entre le texte et la flèche */
+}
+
+.link-button:hover .arrow {
+    transform: scaleX(1);       /* Lors du survol, la flèche entière est visible */
+}
