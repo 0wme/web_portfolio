@@ -11,7 +11,6 @@ body {
     font-size: 16px;
     color: #ffffff;
     background-color: rgb(0, 0, 0); 
-
 }
 
 .container {
@@ -33,7 +32,6 @@ header {
     align-items: center;
     backdrop-filter: blur(4px);
 }
-
 
 nav {
     display: flex;
@@ -59,7 +57,6 @@ nav ul li a {
     border: 2px solid cornflowerblue;
     padding: 10px 25px;
     border-radius: 10px;
-
 }
 
 nav ul li a:hover {
@@ -69,17 +66,15 @@ nav ul li a:hover {
 
 .box {
     background-color: rgb(0, 0, 0);
-    margin: 180px auto; /* Centrer les boîtes */
+    margin: 180px auto; 
     padding: 20px;
-    width: 40%; /* Ajustez la largeur si nécessaire */
+    width: 40%;
     position: relative;
     z-index: 2;
     border-radius: 20px;
     border: 2px solid white;
-
 }
 
-/* Ajoutez ces classes pour alterner les boîtes droite et gauche */
 .box:nth-of-type(odd) {
     float: left;
     clear: both;
@@ -88,11 +83,6 @@ nav ul li a:hover {
 .box:nth-of-type(even) {
     float: right;
     clear: both;
-}
-
-.logo-img {
-    width: 100px; /* Définir la largeur de l'image */
-    height: auto; /* Conserver les proportions de l'image */
 }
 
 #matrixRain {
@@ -104,31 +94,14 @@ nav ul li a:hover {
     z-index: -1;
 }
 
-
 .link-button {
-    background-color: cornflowerblue;
+    background: transparent;
     color: #ffffff;
     padding: 10px 25px;
-    border: none;
+    border: 2px solid #ffffff;
     border-radius: 10px;
-    cursor: pointer;
     font-family: 'Courier New', monospace;
     font-size: 16px;
-    transition: background-color 0.3s;
-    display: inline-flex;       /* Ajouté pour aligner le texte et la flèche */
-    align-items: center;        /* Centre verticalement la flèche par rapport au texte */
-    overflow: hidden;           /* Cacher la partie de la flèche qui dépasse pendant l'animation */
-    position: relative;
-}
-
-.arrow {
-    font-size: 24px;       /* Ajustez la taille si nécessaire */
-    display: inline-block;
-    transform: scaleX(0.2);     /* Initialement, seule la pointe de la flèche est visible */
-    transition: transform 0.3s; /* Animation */
-    margin-left: 5px;           /* Espacement entre le texte et la flèche */
-}
-
-.link-button:hover .arrow {
-    transform: scaleX(1);       /* Lors du survol, la flèche entière est visible */
+    z-index: 1;
+    transition: transform 0.1s;
 }
