@@ -312,10 +312,12 @@ button:hover .arrow:before {
   outline-offset: 40; /* était 20 */
 }
 
-.light-button button.bt .button-holder svg {
+.light-button button.bt .button-holder svg{
   height: 100px; /* était 50px */
   fill: #0f0f0f;
   transition: 300ms;
+  filter: grayscale(100%);
+
 }
 
 .light-button button.bt .light-holder {
@@ -347,7 +349,8 @@ button:hover .arrow:before {
 }
 
 .light-button button.bt:hover .button-holder svg {
-  fill: rgba(88, 101, 242, 1);
+    filter: grayscale(0%);
+
 }
 
 
