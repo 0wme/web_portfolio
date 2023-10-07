@@ -1,5 +1,11 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Global styles */
+/* ---------------------- Body ---------------------- */
 body {
     font-family: 'Courier New', monospace;
     font-size: 16px;
@@ -14,7 +20,7 @@ body {
 }
 
 
-
+/* ---------- Header  ---------- */
 
 header {
     background-color: transparent;
@@ -142,22 +148,48 @@ button:hover .arrow:before {
 /* ---------- Card Animation ---------- */
 
 .card {
-  overflow: visible;
   width: 400px;
   height: 600px;
   margin-top: 100px;
-  position: relative;
-  z-index: 1;
+}
+
+
+.cards-container {
+  display: flex;
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;}
+
+.card:not(:last-child) {
+  margin-right: 2%; 
+}
+
+.card:hover {
+  z-index: 2;
+}
+
+
+.card:hover .content {
+  transform: rotateY(180deg);
+  border-color: white;
+}
+
+@keyframes rotation_481 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% { 
+    transform: rotateZ(360deg);
+  }
 }
 
 .content {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  transition: transform 300ms, border-color 300ms; /* Transition modifiée ici */
   box-shadow: 0px 0px 10px 1px #000000ee;
   border-radius: 5px;
-  border: 2px solid transparent; /* Bordure transparente ajoutée ici */
+  border: 2px solid transparent; 
 }
 
 .front, .back {
@@ -169,7 +201,7 @@ button:hover .arrow:before {
   -webkit-backface-visibility: hidden;
   border-radius: 5px;
   overflow: hidden;
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 .back {
@@ -206,19 +238,7 @@ button:hover .arrow:before {
   gap: 30px;
 }
 
-.card:hover .content {
-  transform: rotateY(180deg);
-  border-color: white; /* Modifié ici */
-}
 
-@keyframes rotation_481 {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  100% { /* Modifié ici pour corriger une erreur */
-    transform: rotateZ(360deg);
-  }
-}
 
 .front {
   transform: rotateY(180deg);
@@ -237,23 +257,6 @@ button:hover .arrow:before {
   align-items: center;
 }
 
-.cards-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 90%;
-  flex-wrap: wrap;
-  gap: 2%;
-}
-
-.card:not(:last-child) {
-  margin-right: 2%; 
-}
-
-.card:hover {
-  z-index: 2;
-}
 
 
 /* ---------- Logo Images ---------- */
@@ -290,7 +293,7 @@ button:hover .arrow:before {
   position: relative;
   height: 300px;
   display: flex;
-  align-items: center;  /* Modifié de flex-end à center */
+  align-items: center; 
   outline: none;
   background: none;
   border: none;
@@ -301,19 +304,19 @@ button:hover .arrow:before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 200px; /* était 100px */
-  width: 200px; /* était 100px */
+  height: 200px; 
+  width: 200px;
   background-color: #0a0a0a;
-  border-radius: 7.5px; /* était 5px */
+  border-radius: 7.5px;
   color: #0f0f0f;
   font-weight: 700;
   transition: 300ms;
   outline: #0f0f0f 2px solid;
-  outline-offset: 40; /* était 20 */
+  outline-offset: 40;
 }
 
 .light-button button.bt .button-holder svg{
-  height: 100px; /* était 50px */
+  height: 100px;
   fill: #0f0f0f;
   transition: 300ms;
   filter: grayscale(100%);
@@ -322,8 +325,8 @@ button:hover .arrow:before {
 
 .light-button button.bt .light-holder {
   position: absolute;
-  height: 400px; /* était 200px */
-  width: 200px; /* était 100px */
+  height: 400px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -332,18 +335,18 @@ button:hover .arrow:before {
 .light-button button.bt .light-holder .dot {
   position: absolute;
   top: 0;
-  width: 15px; /* était 10px */
-  height: 15px; /* était 10px */
+  width: 15px; 
+  height: 15px; 
   background-color: #0a0a0a;
-  border-radius: 15px; /* était 10px */
+  border-radius: 15px;
   z-index: 2;
 }
 
 .light-button button.bt .light-holder .light {
   position: absolute;
   top: 0;
-  width: 300px; /* était 200px */
-  height: 300px; /* était 200px */
+  width: 300px;
+  height: 300px; 
   clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
   background: transparent;
 }
@@ -393,12 +396,19 @@ button:hover .arrow:before {
 
 
 .email-light button.bt:hover .button-holder {
-  color: red;
-  outline: red 2px solid;
+  color: #FF6B6B;
+  outline: #FF6B6B 2px solid;
   outline-offset: 2px;
 }
 
 .email-light button.bt:hover .light-holder .light {
   background: rgb(255, 255, 255);
-  background: linear-gradient(180deg, red 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, #FF6B6B 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
 }
+
+
+.cards-container .card:nth-child(1) strong { color: white; }
+.cards-container .card:nth-child(2) strong { color: rgb(90, 175, 255); }
+.cards-container .card:nth-child(3) strong { color: rgb(88, 101, 242, 1) }
+.cards-container .card:nth-child(4) strong { color: #FF6B6B; }
+
