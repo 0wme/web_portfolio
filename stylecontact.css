@@ -354,3 +354,39 @@ button:hover .arrow:before {
   background: rgb(255, 255, 255);
   background: linear-gradient(180deg, rgba(88, 101, 242, 1) 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
 }
+
+/* LinkedIn Yellow Light on Hover */
+.linkedin-light button.bt:hover .button-holder {
+  color: rgb(90, 175, 255);
+  outline: rgb(90, 175, 255) 2px solid;
+  outline-offset: 2px;
+}
+
+.linkedin-light button.bt:hover .light-holder .light {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgb(90, 175, 255) 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+.github-light button.bt:hover .button-holder {
+  color: white;
+  outline: white 2px solid;
+  outline-offset: 2px;
+}
+
+.github-light button.bt:hover .light-holder .light {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, white 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+.email-light button.bt:hover .button-holder {
+  color: red;
+  outline: red 2px solid;
+  outline-offset: 2px;
+}
+
+.email-light button.bt:hover .light-holder .light {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, red 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+}
