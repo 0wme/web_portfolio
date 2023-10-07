@@ -94,14 +94,97 @@ nav ul li a:hover {
     z-index: -1;
 }
 
+
+/* ---------- Button ---------- */
+
 .link-button {
-    background: transparent;
-    color: #ffffff;
-    padding: 10px 25px;
-    border: 2px solid #ffffff;
+    --primary-color: #645bff;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
     border-radius: 10px;
-    font-family: 'Courier New', monospace;
-    font-size: 16px;
-    z-index: 1;
-    transition: transform 0.1s;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.link-button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+}
+
+.link-button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+
+.link-button:hover {
+    background-color: var(--hover-color);
+}
+
+.link-button:hover .arrow {
+    background: var(--secondary-color);
+}
+
+.link-button:hover .arrow:before {
+    right: 0;
+}
+
+/* Effet de bordure */
+.link-button::before {
+    content: "";
+    position: absolute;
+    top: -2px;  /* en fonction de l'épaisseur de la bordure */
+    left: -2px;  /* en fonction de l'épaisseur de la bordure */
+    width: 400%;
+    height: calc(100% + 4px); /* ajuster en fonction de l'épaisseur de la bordure */
+    background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+    background-size: 25% 100%;
+    animation: borderAnimation 0.75s linear infinite;
+    animation-play-state: paused;
+    transform: translateX(-25%);
+    transition: transform 0.25s ease-out;
+    z-index: -1;
+    background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+    background-size: 25% 100%;
+}
+
+.link-button:hover::before {
+    animation-play-state: running;
+    transition-duration: 0.75s;
+}
+
+@keyframes borderAnimation {
+    to {
+        transform: translateX(-25%);
+    }
 }
