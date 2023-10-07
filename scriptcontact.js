@@ -1,3 +1,5 @@
+/*
+
 const canvas = document.getElementById('matrixRain');
 const ctx = canvas.getContext('2d');
 
@@ -37,3 +39,4 @@ window.addEventListener('resize', function() {
     canvas.height = window.innerHeight;
 });
 
+*/
