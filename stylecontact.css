@@ -161,7 +161,7 @@ button:hover .arrow:before {
 }
 
 .front, .back {
-  background-color: transparent;
+  background-color: #151515cb;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -169,6 +169,7 @@ button:hover .arrow:before {
   -webkit-backface-visibility: hidden;
   border-radius: 5px;
   overflow: hidden;
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .back {
@@ -264,7 +265,7 @@ button:hover .arrow:before {
 }
 
 .linkedin-logo {
-  width: 50px; 
+  width: 80px; 
   height: auto;
   margin-bottom: 10px;
 }
@@ -300,27 +301,27 @@ button:hover .arrow:before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 150px; /* était 100px */
-  width: 150px; /* était 100px */
+  height: 200px; /* était 100px */
+  width: 200px; /* était 100px */
   background-color: #0a0a0a;
   border-radius: 7.5px; /* était 5px */
   color: #0f0f0f;
   font-weight: 700;
   transition: 300ms;
   outline: #0f0f0f 2px solid;
-  outline-offset: 30; /* était 20 */
+  outline-offset: 40; /* était 20 */
 }
 
 .light-button button.bt .button-holder svg {
-  height: 75px; /* était 50px */
+  height: 100px; /* était 50px */
   fill: #0f0f0f;
   transition: 300ms;
 }
 
 .light-button button.bt .light-holder {
   position: absolute;
-  height: 300px; /* était 200px */
-  width: 150px; /* était 100px */
+  height: 400px; /* était 200px */
+  width: 200px; /* était 100px */
   display: flex;
   flex-direction: column;
   align-items: center;
