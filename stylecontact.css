@@ -146,6 +146,8 @@ button:hover .arrow:before {
   width: 400px;
   height: 600px;
   margin-top: 100px;
+  position: relative; /* Ajouté pour z-index */
+  z-index: 1; /* Ajouté pour le survol */
 }
 
 .content {
@@ -175,6 +177,8 @@ button:hover .arrow:before {
   display: flex;
   align-items: center;
   overflow: hidden;
+  border: 2px solid transparent; /* Prépare la bordure */
+  transition: border-color 300ms; /* Transition pour la bordure */
 }
 
 .back::before {
@@ -204,6 +208,11 @@ button:hover .arrow:before {
 .card:hover .content {
   transform: rotateY(180deg);
 }
+
+.card:hover .back {
+  border-color: white; /* Affiche la bordure blanche au survol */
+}
+
 
 @keyframes rotation_481 {
   0% {
@@ -235,11 +244,20 @@ button:hover .arrow:before {
 
 .cards-container {
   display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center;    /* Centre verticalement */
   width: 100%;
+  max-width: 90%; /* Ajouté pour éviter que les cartes ne touchent les bords */
+  flex-wrap: wrap; /* Autorise les cartes à se replier si nécessaire */
+  gap: 2%; /* Espacement entre les cartes repliées */
 }
 
 .card:not(:last-child) {
   margin-right: 2%; 
+}
+
+.card:hover {
+  z-index: 2; /* Ajouté pour le survol */
 }
 
 
