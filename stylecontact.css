@@ -158,7 +158,7 @@ button:hover .arrow:before {
 }
 
 .front, .back {
-  background-color: #151515;
+  background-color: transparent;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -218,24 +218,18 @@ button:hover .arrow:before {
 .front {
   transform: rotateY(180deg);
   color: white;
+  display: flex;  /* Ajouté */
+  align-items: center;  /* Ajouté */
+  justify-content: center;  /* Ajouté */
 }
 
 .front .front-content {
-  position: absolute;
   width: 100%;
   height: 100%;
-  padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-
-.front-content .badge {
-  background-color: #00000055;
-  padding: 2px 10px;
-  border-radius: 10px;
-  backdrop-filter: blur(2px);
-  width: fit-content;
+  justify-content: center;  /* Ajouté */
+  align-items: center;  /* Ajouté */
 }
 
 
@@ -276,18 +270,17 @@ button:hover .arrow:before {
 }
 
 
-/* ---------- Discord Form ---------- */
+/* ---------- Lightning Form ---------- */
 
 
 .light-button button.bt {
   position: relative;
-  height: 200px;
+  height: 300px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;  /* Modifié de flex-end à center */
   outline: none;
   background: none;
   border: none;
-
 }
 
 .light-button button.bt .button-holder {
@@ -295,27 +288,27 @@ button:hover .arrow:before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100px;
-  width: 100px;
+  height: 150px; /* était 100px */
+  width: 150px; /* était 100px */
   background-color: #0a0a0a;
-  border-radius: 5px;
+  border-radius: 7.5px; /* était 5px */
   color: #0f0f0f;
   font-weight: 700;
   transition: 300ms;
   outline: #0f0f0f 2px solid;
-  outline-offset: 20;
+  outline-offset: 30; /* était 20 */
 }
 
 .light-button button.bt .button-holder svg {
-  height: 50px;
+  height: 75px; /* était 50px */
   fill: #0f0f0f;
   transition: 300ms;
 }
 
 .light-button button.bt .light-holder {
   position: absolute;
-  height: 200px;
-  width: 100px;
+  height: 300px; /* était 200px */
+  width: 150px; /* était 100px */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -324,18 +317,18 @@ button:hover .arrow:before {
 .light-button button.bt .light-holder .dot {
   position: absolute;
   top: 0;
-  width: 10px;
-  height: 10px;
+  width: 15px; /* était 10px */
+  height: 15px; /* était 10px */
   background-color: #0a0a0a;
-  border-radius: 10px;
+  border-radius: 15px; /* était 10px */
   z-index: 2;
 }
 
 .light-button button.bt .light-holder .light {
   position: absolute;
   top: 0;
-  width: 200px;
-  height: 200px;
+  width: 300px; /* était 200px */
+  height: 300px; /* était 200px */
   clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
   background: transparent;
 }
@@ -343,6 +336,10 @@ button:hover .arrow:before {
 .light-button button.bt:hover .button-holder svg {
   fill: rgba(88, 101, 242, 1);
 }
+
+
+
+/* ---------- Color Form ---------- */
 
 .light-button button.bt:hover .button-holder {
   color: rgba(88, 101, 242, 1);
@@ -355,7 +352,6 @@ button:hover .arrow:before {
   background: linear-gradient(180deg, rgba(88, 101, 242, 1) 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
 }
 
-/* LinkedIn Yellow Light on Hover */
 .linkedin-light button.bt:hover .button-holder {
   color: rgb(90, 175, 255);
   outline: rgb(90, 175, 255) 2px solid;
