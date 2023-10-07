@@ -412,3 +412,7 @@ button:hover .arrow:before {
 .cards-container .card:nth-child(3) strong { color: rgb(88, 101, 242, 1) }
 .cards-container .card:nth-child(4) strong { color: #FF6B6B; }
 
+.text {
+  font-size: 20px;
+  color: white;
+}
