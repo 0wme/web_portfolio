@@ -48,10 +48,8 @@ header {
     align-items: center;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-}
+
+/* ----------- Button Animation ----------- */
 
 nav ul {
     display: flex;
@@ -66,18 +64,58 @@ nav ul li:last-child {
     margin-right: 0;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    border: 2px solid cornflowerblue;
-    padding: 10px 25px;
-    border-radius: 10px;
-}
 
-nav ul li a:hover {
+.cti {
+    background-color: #6019bd;
+    padding: 10px 20px;
+    border: 3px solid transparent;
+    border-radius: 0.6em;
+    transition: 0.2s;
+  }
+  
+  .cti:hover {
+    background-color: transparent;
+    border: 3px solid #6019bd;
+    box-shadow: 0px 0px 27px 5px #6019bd;
+    cursor: pointer;
+  }
+  
+  .CTI {
     color: #fff;
-    border-color: #fff;
-}
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    font-weight: bold;
+    overflow: hidden;
+    border-right: 4px solid transparent;
+    white-space: nowrap;
+    margin: 0 auto;
+  }
+  
+  .cti:hover .CTI {
+    border-right: 4px solid #6019bd;
+    animation: letters 1.75s steps(22, end),
+      cursor .4s step-end infinite;
+  }
+  
+  @keyframes letters {
+    from {
+      width: 0;
+    }
+  
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes cursor {
+    from {
+      border-color: transparent
+    }
+  
+    50% {
+      border-color: #6019bd
+    }
+  }
 
 /* Main content styles */
 main.container {
