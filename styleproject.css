@@ -108,15 +108,15 @@ nav ul li:last-child {
 }
 
 .content {
-  position: absolute;
   bottom: 20px;
   right: 20px;
-  text-align: right; /* Pour aligner le texte à droite */
+  text-align: right;
 }
 
 .content h2 {
   color: #fff;
-  margin-bottom: 10px;
+  margin-top: 150px;
+  margin-right: 300px;
 }
 
 .content p {
@@ -134,7 +134,6 @@ nav ul li:last-child {
   margin-top: 50px;
   position: relative; /* Pour positionner le contenu en absolu à l'intérieur */
   padding: 20px; /* Ajout d'un padding pour éviter que le contenu touche les bords */
-  box-sizing: border-box; /* Pour inclure le padding dans la largeur/hauteur */
 }
 
 /* Styles pour les liens/boutons "View more" */
@@ -145,6 +144,8 @@ nav ul li:last-child {
   padding: 10px 20px;
   display: inline-block;
   transition: background-color 0.3s;
+  margin-top: 200px;
+  margin-right: 300px;
 }
 
 .rtg-page:hover, .vg-page:hover, .lg-page:hover {
