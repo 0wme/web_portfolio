@@ -107,22 +107,34 @@ nav ul li:last-child {
 
 }
 
+/* ----------- Rectangle Projects  ----------- */
+
+
+.project-logo {
+  width: 400px;
+  position: absolute;
+  left: 200px;
+  top: 50%; 
+  transform: translateY(-50%);
+}
+
 .content {
+  position: absolute;
   bottom: 20px;
   right: 20px;
-  text-align: right;
 }
 
 .content h2 {
   color: #fff;
-  margin-top: 150px;
-  margin-right: 300px;
+  margin-bottom: 10px
 }
 
 .content p {
   color: #aaa;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Ajustement pour donner de l'espace entre le paragraphe et le bouton */
 }
+
+
 
 /* Styles pour les bannières */
 .Raytracing .rectangleRaytracing,
@@ -133,7 +145,7 @@ nav ul li:last-child {
   background-color: #333;
   margin-top: 50px;
   position: relative; /* Pour positionner le contenu en absolu à l'intérieur */
-  padding: 20px; /* Ajout d'un padding pour éviter que le contenu touche les bords */
+  padding: 20px; 
 }
 
 /* Styles pour les liens/boutons "View more" */
