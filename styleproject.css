@@ -107,15 +107,48 @@ nav ul li:last-child {
 
 }
 
+.content {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: right; /* Pour aligner le texte à droite */
+}
+
+.content h2 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.content p {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
 /* Styles pour les bannières */
 .Raytracing .rectangleRaytracing,
 .Verger-Game .rectangleVerger,
 .Latice-Game .rectangleLatice {
-    width: 100%; 
-    height: 600px;     
-    background-color: #333; 
-    margin-top: 50px;  
+  width: 100%;
+  height: 600px;
+  background-color: #333;
+  margin-top: 50px;
+  position: relative; /* Pour positionner le contenu en absolu à l'intérieur */
+  padding: 20px; /* Ajout d'un padding pour éviter que le contenu touche les bords */
+  box-sizing: border-box; /* Pour inclure le padding dans la largeur/hauteur */
+}
 
+/* Styles pour les liens/boutons "View more" */
+.rtg-page, .vg-page, .lg-page {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.rtg-page:hover, .vg-page:hover, .lg-page:hover {
+  background-color: #6019bd;
 }
 
 
