@@ -62,14 +62,14 @@ nav ul li:last-child {
     transition: 0.2s;
   }
   
-  .cti:hover {
+.cti:hover {
     background-color: transparent;
     border: 3px solid #6019bd;
     box-shadow: 0px 0px 27px 5px #6019bd;
     cursor: pointer;
-  }
+}
   
-  .CTI {
+.CTI {
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
     font-size: 17px;
@@ -78,15 +78,15 @@ nav ul li:last-child {
     border-right: 4px solid transparent;
     white-space: nowrap;
     margin: 0 auto;
-  }
+}
   
-  .cti:hover .CTI {
+.cti:hover .CTI {
     border-right: 4px solid #6019bd;
     animation: letters 1.75s steps(22, end),
       cursor .4s step-end infinite;
-  }
+}
   
-  @keyframes letters {
+@keyframes letters {
     from {
       width: 0;
     }
@@ -94,9 +94,9 @@ nav ul li:last-child {
     to {
       width: 100%;
     }
-  }
+}
   
-  @keyframes cursor {
+@keyframes cursor {
     from {
       border-color: transparent
     }
@@ -104,20 +104,20 @@ nav ul li:last-child {
     50% {
       border-color: #6019bd
     }
-  }
 
-/* Styliser tous les rectangles de la même manière */
-.rectangleLatice,
-.rectangleVerger,
-.rectangleRaytracing {
+}
+
+/* Styles pour les bannières */
+.Raytracing .rectangleRaytracing,
+.Verger-Game .rectangleVerger,
+.Latice-Game .rectangleLatice {
     width: 100%; 
-    height: calc((100vh - 70px - 40px) / 3); 
-    background-color: rgba(255, 255, 255, 0.1); 
-    margin-bottom: 20px; 
+    height: 600px;     
+    background-color: #333; 
+    margin-top: 50px;  
+
 }
 
-/* Enlever la marge du dernier rectangle de chaque section */
-section > div:last-child {
-    margin-bottom: 0;
-}
+
+
 
