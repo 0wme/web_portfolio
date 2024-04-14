@@ -72,7 +72,7 @@ setFilledCircles('.ratingpython', 4);
 setFilledCircles('.ratingjava', 3);
 setFilledCircles('.rating', 3);
 setFilledCircles('.ratingc', 2);
-setFilledCircles('.ratingcsharp', 3);
+setFilledCircles('.ratingcsharp', 1);
 setFilledCircles('.ratinghtml', 4);
 setFilledCircles('.ratingcss', 4);
 setFilledCircles('.ratingjs', 2);
